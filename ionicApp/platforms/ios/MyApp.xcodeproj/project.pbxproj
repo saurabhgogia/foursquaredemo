@@ -22,6 +22,8 @@
 		6A1D53C3B8B847E098611981 /* CDVViewController+SplashScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F9FC820C346463D8342E24E /* CDVViewController+SplashScreen.m */; };
 		D27BADFF146D4D7DA369589E /* CDVStatusBar.m in Sources */ = {isa = PBXBuildFile; fileRef = CB0DAE39F1884961BC25085F /* CDVStatusBar.m */; };
 		32F869D4BA464AD7B7676671 /* IonicKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 04B6C60256C242CBA7014378 /* IonicKeyboard.m */; };
+		A77A4C52E0E2419682440372 /* CDVLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 69FFB46102034BF28E80EADC /* CDVLocation.m */; };
+		4C0A78346486452E9A5397FF /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A9B9E757068435E92379516 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +76,9 @@
 		C5BC5F1B71EF40D0A8AD4E8C /* CDVStatusBar.h */ = {isa = PBXFileReference; name = "CDVStatusBar.h"; path = "cordova-plugin-statusbar/CDVStatusBar.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 		04B6C60256C242CBA7014378 /* IonicKeyboard.m */ = {isa = PBXFileReference; name = "IonicKeyboard.m"; path = "ionic-plugin-keyboard/IonicKeyboard.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
 		DA3EBC6F73A640028ADD4547 /* IonicKeyboard.h */ = {isa = PBXFileReference; name = "IonicKeyboard.h"; path = "ionic-plugin-keyboard/IonicKeyboard.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		69FFB46102034BF28E80EADC /* CDVLocation.m */ = {isa = PBXFileReference; name = "CDVLocation.m"; path = "cordova-plugin-geolocation/CDVLocation.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		309D0C1611EB4FC4894A9703 /* CDVLocation.h */ = {isa = PBXFileReference; name = "CDVLocation.h"; path = "cordova-plugin-geolocation/CDVLocation.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		4A9B9E757068435E92379516 /* CoreLocation.framework */ = {isa = PBXFileReference; name = "CoreLocation.framework"; path = "System/Library/Frameworks/CoreLocation.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +87,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				301BF552109A68D80062928A /* libCordova.a in Frameworks */,
+				4C0A78346486452E9A5397FF /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,6 +158,7 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4A9B9E757068435E92379516 /* CoreLocation.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -189,6 +196,8 @@
 				C5BC5F1B71EF40D0A8AD4E8C /* CDVStatusBar.h */,
 				04B6C60256C242CBA7014378 /* IonicKeyboard.m */,
 				DA3EBC6F73A640028ADD4547 /* IonicKeyboard.h */,
+				69FFB46102034BF28E80EADC /* CDVLocation.m */,
+				309D0C1611EB4FC4894A9703 /* CDVLocation.h */,
 			);
 			name = Plugins;
 			path = "MyApp/Plugins";
@@ -307,6 +316,7 @@
 				6A1D53C3B8B847E098611981 /* CDVViewController+SplashScreen.m in Sources */,
 				D27BADFF146D4D7DA369589E /* CDVStatusBar.m in Sources */,
 				32F869D4BA464AD7B7676671 /* IonicKeyboard.m in Sources */,
+				A77A4C52E0E2419682440372 /* CDVLocation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
